@@ -62,7 +62,9 @@ After all proccessing ocurred, the `meansframe` was dumped into
 
     INTEGER
 
-Identifier of the person measured. \#\#\#\#activity  
+Identifier of the person measured.
+
+####activity  
 CHARACTER-STRING Description of performed activity at the moment of
 measuring.
 
