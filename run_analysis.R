@@ -59,3 +59,5 @@ meltframe<-melt(dataframe,id=c("subject","activity"),measure.vars = names(datafr
 
 ## Generating the new tidy frame
 meansframe<-dcast(meltframe, subject+activity ~ variable,fun.aggregate = mean)
+
+meansframe
