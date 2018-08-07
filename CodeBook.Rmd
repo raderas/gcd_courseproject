@@ -21,51 +21,61 @@ Description of performed activity at the moment of measuring.
 #### tBodyAcc-mean()-X
     NUMERIC
 Domain: time
+
 Average value of mean body acceleration on X axis measured for *subject* and *activity*
 
 ####tBodyAcc-mean()-Y   
     NUMERIC
 Domain: time
+
 Average value of mean body acceleration on Y axis measured for *subject* and *activity* 
 
 ####tBodyAcc-mean()-Z   
     NUMERIC
 Domain: time
+
 Average value of mean body acceleration on Z axis measured for *subject* and *activity*
 
 ####tBodyAcc-std()-X
     NUMERIC
 Domain: time
+
 Average value of standard deviation of body acceleration on X axis measured for *subject* and *activity*
 
 ####tBodyAcc-std()-Y
     NUMERIC
 Domain: time
+
 Average value of standard deviation of body acceleration on Y axis measured for *subject* and *activity*
 
 ####tBodyAcc-std()-Z
     NUMERIC
 Domain: time
+
 Average value of standard deviation of body acceleration on Z axis measured for *subject* and *activity*
    
 ####tGravityAcc-mean()-X
     NUMERIC
 Domain: time
+
 Average value of mean of gravity acceleration on X axis measured for *subject* and *activity*
 
 ####tGravityAcc-mean()-Y
     NUMERIC
 Domain: time
+
 Average value of mean of gravity acceleration on Y axis measured for *subject* and *activity*
 
 ####tGravityAcc-mean()-Z
     NUMERIC
 Domain: time
+
 Average value of mean of gravity acceleration on Z axis measured for *subject* and *activity*
 
 ####tGravityAcc-std()-X
     NUMERIC
 Domain: time
+
 Average value of standard deviation of gravity acceleration on X axis measured for *subject* and *activity*
 
 ####tGravityAcc-std()-Y         
