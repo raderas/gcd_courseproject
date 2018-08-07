@@ -64,7 +64,7 @@ After all proccessing ocurred, the `meansframe` was dumped into
 
 Identifier of the person measured.
 
-####activity  
+#### activity  
 CHARACTER-STRING Description of performed activity at the moment of
 measuring.
 
