@@ -23,6 +23,41 @@ was used. From each window, a vector of features was obtained by
 calculating variables from the time and frequency domain. Variable names
 and measurement definitions are described below.
 
+Transformations applied
+-----------------------
+
+From the original set of files, the script run\_analysis.R executes the
+following steps in order to generate the **tidydataset.txt** file.
+
+1.  Loads the activity label definitions file and separates the
+    identification numbers from their descriptive activity name.
+2.  Loads the labels for the original datasets (the feature list which
+    details all the measurements from the datasets)
+3.  Applies a regular expression match filter to retain only the array
+    indexes that contain measurements that correspond to mean or
+    standard deviation of the variables.
+4.  For both datasets, a load into memory is performed, then unwanted
+    columns are removed keeping only those corresponding to mean or
+    standard deviation of variables.
+5.  The names of the remaining columns are assigned to the dataframes.
+6.  Subject identifiers are loaded into memory from the corresponding
+    files.
+7.  Descriptive activity names are generated for every row of data.
+8.  A new dataset is generated, both for train and test data, wich
+    includes the subject identifiers, the descriptive activity labels,
+    and the dataset filtered columns.
+9.  Both datasets are combined using rbind function to generate a single
+    dataset called *dataframe*
+10. The dataset is melted into a new dataset called meltframe, assigning
+    *subject* and *activity* as ids for each row and every other column
+    as measure variables.
+11. The final dataset called *meansframe* is generated with the dcast
+    function over the meltframe with the formula
+    `subject+activity ~ variable` and with the mean function.
+
+After all proccessing ocurred, the `meansframe` was dumped into
+**tidydataset.txt** file.
+
 #### subject
 
     INTEGER
