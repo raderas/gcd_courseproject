@@ -9,30 +9,68 @@ output: md_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Data Dictionary - Getting and Cleaning Data Course Project
+# Data Dictionary - Getting and Cleaning Data Course Project
 
-**subject**   INTEGER
+#### subject   
+    INTEGER
 Identifier of the person measured.
-
-**activity**  CHARACTER-STRING
+#### activity  
+    CHARACTER-STRING
 Description of performed activity at the moment of measuring. 
 
-**tBodyAcc-mean()-X**   NUMERIC
+#### tBodyAcc-mean()-X
+    NUMERIC
 Domain: time
+Average value of mean body acceleration on X axis measured for *subject* and *activity*
 
+####tBodyAcc-mean()-Y   
+    NUMERIC
+Domain: time
+Average value of mean body acceleration on Y axis measured for *subject* and *activity* 
 
-**tBodyAcc-mean()-Y**   NUMERIC
+####tBodyAcc-mean()-Z   
+    NUMERIC
+Domain: time
+Average value of mean body acceleration on Z axis measured for *subject* and *activity*
 
-**tBodyAcc-mean()-Z**   NUMERIC
+####tBodyAcc-std()-X
+    NUMERIC
+Domain: time
+Average value of standard deviation of body acceleration on X axis measured for *subject* and *activity*
 
-**tBodyAcc-std()-X**    NUMERIC
+####tBodyAcc-std()-Y
+    NUMERIC
+Domain: time
+Average value of standard deviation of body acceleration on Y axis measured for *subject* and *activity*
 
-**tBodyAcc-std()-Y**    NUMERIC
+####tBodyAcc-std()-Z
+    NUMERIC
+Domain: time
+Average value of standard deviation of body acceleration on Z axis measured for *subject* and *activity*
+   
+####tGravityAcc-mean()-X
+    NUMERIC
+Domain: time
+Average value of mean of gravity acceleration on X axis measured for *subject* and *activity*
 
-**tBodyAcc-std()-Z**    NUMERIC
-   [9] "tGravityAcc-mean()-X"        "tGravityAcc-mean()-Y"       
-  [11] "tGravityAcc-mean()-Z"        "tGravityAcc-std()-X"        
-  [13] "tGravityAcc-std()-Y"         "tGravityAcc-std()-Z"        
+####tGravityAcc-mean()-Y
+    NUMERIC
+Domain: time
+Average value of mean of gravity acceleration on Y axis measured for *subject* and *activity*
+
+####tGravityAcc-mean()-Z
+    NUMERIC
+Domain: time
+Average value of mean of gravity acceleration on Z axis measured for *subject* and *activity*
+
+####tGravityAcc-std()-X
+    NUMERIC
+Domain: time
+Average value of standard deviation of gravity acceleration on X axis measured for *subject* and *activity*
+
+####tGravityAcc-std()-Y         
+
+####tGravityAcc-std()-Z
   [15] "tBodyAccJerk-mean()-X"       "tBodyAccJerk-mean()-Y"      
   [17] "tBodyAccJerk-mean()-Z"       "tBodyAccJerk-std()-X"       
   [19] "tBodyAccJerk-std()-Y"        "tBodyAccJerk-std()-Z"       
